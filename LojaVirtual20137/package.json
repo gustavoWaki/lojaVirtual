@@ -1,0 +1,24 @@
+{
+    "name": "lojavirtual20137",
+    "version": "1.0.0",
+    "description": "projetoTeste",
+    "main": "server.js",
+    "dependencies": {
+        "@marko/express": "^1.0.0",
+        "body-parser": "^1.19.0",
+        "bootstrap": "^4.5.3",
+        "express": "^4.17.1",
+        "express-mysql-session": "^2.1.4",
+        "express-session": "^1.17.1",
+        "marko": "^4.23.9",
+        "mysql": "^2.18.1",
+        "nodemon": "^2.0.6"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js"
+    },
+    "author": "Gustavo",
+    "license": "ISC"
+}

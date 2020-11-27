@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 45px;
+            color: rgb(0, 0, 0);
+        }
+        
+        body {
+            text-align: center;
+            background-image: url("https://i.imgur.com/GbBYTxS.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #caixa {
+            margin-top: 200px;
+            margin: 0 auto;
+            border-radius: 3px;
+            background-color: white;
+            width: 290px;
+            height: 560px;
+        }
+        
+        form {
+            border: 3px solid #f1f1f1;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+        
+        #logo{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: black;
+        border-radius: 10px;
+        }
+
+        label {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+<img src="https://i.pinimg.com/originals/e5/f9/f5/e5f9f538d9f7c3a273ccb7d34f49c785.png" id="logo">
+    <div id="caixa">
+        <form action="/verificarSeJaExiste" method="post">
+            <div class="imgcontainer">
+                <img src="https://twirpz.files.wordpress.com/2015/06/twitter-avi-gender-balanced-figure.png?w=640" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="nome"><b>Nome:</b></label>
+                <input type="text" placeholder="Digite seu nome" name="nome" id="nome" required>
+
+                <label for="email"><b>E-Mail</b></label>
+                <input type="text" placeholder="Digite seu e-mail" name="email"  id="email" required>
+
+                <label for="login"><b>CPF</b></label>
+                <input type="text" placeholder="Digite seu CPF" name="login"  id="login" required>
+
+                <label for="dataNasc"><b>DATA DE NASCIMENTO</b></label>
+                <input type="date" name="dataNasc"  id="dataNasc" required>
+                <br>
+                
+                <label for="senha"><b>Senha</b></label>
+                <input type="password" placeholder="Digite sua senha" name="senha"  id="senha" required>
+
+                <button type="submit">Criar conta</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
